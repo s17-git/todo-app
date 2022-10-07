@@ -1,6 +1,6 @@
 import state from "../../data/state.js";
 
-export function findTast(id) {
+export function findTask(id) {
 
     let task = state.find( (task)=> task.id === id );
 

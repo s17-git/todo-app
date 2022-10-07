@@ -1,5 +1,5 @@
 import state from "../../data/state.js";
-import { findTast } from "../manager/find.js";
+import { findTask } from "../manager/find.js";
 
 let tbody = document.querySelector('tbody');
 
@@ -101,7 +101,7 @@ export function add(todo) {
 export function edit(ev) {
 
       let id = ev.target.parentElement.parentElement.parentElement.id;
-      let todo = findTast(id);
+      let todo = findTask(id);
 
     document.querySelector("#tache").value = todo.task;
     document.querySelector("#deadline").value = todo.deadline;
