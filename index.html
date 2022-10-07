@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 10px;
+            background: indigo;
+
+        }
+
+       
+        #app {
+            max-width: 500px;
+            margin: auto;
+            background: #fff;
+        }
+
+        h1 {
+            color: rgb(78, 9, 128);
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        .app-header {
+            display: flex;
+            align-items: center;
+            border-bottom: .1px solid indigo;
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+        .line {
+            display: flex;
+            
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 2px;
+
+        }
+
+        input {
+            height: 30px;
+        }
+
+        input,
+        textarea {
+            padding: 5px;
+            border: none;
+            outline: none;
+            border: 1px solid rgb(175, 118, 216);
+            
+        }
+
+        label {
+            font-weight: 600;
+        }
+
+        button {
+            background: indigo;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            outline: none;
+            margin-left: 2px;
+            cursor: pointer;
+            font-weight: lighter;
+
+        }
+
+        table {
+            width: 100%;
+            border:rgb(175, 118, 216);
+            border-collapse: collapse;
+
+        }
+
+        td {
+            border: 1px solid rgb(94, 38, 134);
+            padding: 3px;
+        }
+        
+
+        .edit-icon,
+        .delete-icon {
+            width: 15px;
+            height: 15px;
+            cursor: pointer;
+        }
+
+        .finish,
+        .in-process {
+            color: #fff;
+            padding: 2px;
+            margin: 2px;
+            border-radius: 5px;
+            font-weight: 900;
+        }
+
+        .finish {
+            background: rgb(98, 156, 9);
+        }
+        .in-process {
+            background: rgb(241, 241, 23);
+            color: grey;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="app">
+        <div class="app-header">
+            <img src="./imgs/logo.png" class="logo" alt="logo">
+            <h1>Bee Todo App</h1>
+        </div>
+
+        <div class="content">
+
+            <div class="inputs-wrapper">
+                <div class="line">
+                    <div class="input-container">
+                        <label for="tache">Tache:</label>
+                        <input type="text" placeholder="Nom de la tache" id="tache" class="input">
+                    </div>
+                    <div class="input-container">
+                        <label for="deadline">Deadline:</label>
+                        <input type="time" id="deadline" class="input">
+                    </div>
+                    
+                </div>
+                <div class="line">
+                    <div class="input-container">
+                        <label for="description">De:</label>
+                        <textarea name="" id="description" cols="30" rows="3"></textarea>                    </div>
+                </div>
+
+                <div class="line">
+                    <button type="button">Ajouter</button>
+                </div>
+                
+            </div>
+            
+            <table>
+                <thead>
+                    <th>Tache</th>
+                    <th>Debut</th>
+                    <th>Deadline</th>
+                    <th>Statut</th>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./main.js" type="module"></script>
+   
+</body>
+</html>
