@@ -1,0 +1,20 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000B\u0000e\u0000e\u0000 \u0000T\u0000o\u0000d\u0000o\u0000 \u0000A\u0000p\u0000p\u0000\r\u0000 \u0000",
+  "main": "main.js",
+  "scripts": {
+    "dev": "sass --watch ./src/app.scss ./dist/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s17-git/bee-todo-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s17-git/bee-todo-app/issues"
+  },
+  "homepage": "https://github.com/s17-git/bee-todo-app#readme"
+}

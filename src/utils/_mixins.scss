@@ -1,0 +1,5 @@
+@use './variables' as v;
+
+@mixin border{
+   border: 1px solid map-get(v.$colors, 'second')
+}

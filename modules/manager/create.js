@@ -1,4 +1,3 @@
-import state from "../../data/state.js";
 
 export function createTask(task, deadline, description) {
 
@@ -11,9 +10,8 @@ export function createTask(task, deadline, description) {
         date: new Date().toLocaleDateString(),
     };
 
-
-   state.push(newTask);
+   window.state.push(newTask);
 
    return newTask;
- 
+
 }

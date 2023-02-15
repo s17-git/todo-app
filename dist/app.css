@@ -1,0 +1,98 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 500px;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.1px solid indigo;
+}
+header img {
+  width: 50px;
+  height: 50px;
+}
+header h1 {
+  color: indigo;
+}
+
+main .line {
+  display: flex;
+  margin: 1rem 0;
+}
+main .input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2px;
+}
+main input {
+  height: 30px;
+}
+main input,
+main textarea {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(175, 118, 216);
+}
+main label {
+  font-weight: 600;
+}
+main button {
+  background: indigo;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin-left: 2px;
+  cursor: pointer;
+}
+main button:hover {
+  background: #3c0069;
+}
+main table {
+  width: 100%;
+  border: rgb(175, 118, 216);
+  border-collapse: collapse;
+}
+main td {
+  border: 1px solid rgb(175, 118, 216);
+  padding: 3px;
+}
+main details {
+  cursor: pointer;
+}
+main .edit-icon,
+main .delete-icon {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+main .finish,
+main .in-process {
+  color: #fff;
+  padding: 2px;
+  margin: 2px;
+  border-radius: 5px;
+  font-weight: 900;
+}
+main .finish {
+  background: rgb(98, 156, 9);
+}
+main .in-process {
+  background: rgb(241, 241, 23);
+  color: rgb(110, 104, 104);
+}
+
+/*# sourceMappingURL=app.css.map */
